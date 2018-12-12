@@ -1,0 +1,168 @@
+/* import a font from google */
+@import url('https://fonts.googleapis.com/css?family=BioRhyme+Expanded|Fruktur|Inknut+Antiqua:300|Sawarabi+Mincho');
+
+/*font-family: 'Inknut Antiqua', serif;
+font-family: 'Sawarabi Mincho', sans-serif;
+font-family: 'BioRhyme Expanded', serif;
+
+
+/* main styles for the body, global background color, text color, font, 0 out margin */
+body {
+  font-family: 'Fruktur', cursive;
+  background-color: black;
+  color: antiquewhite;
+  margin: 0;
+}
+
+
+/* styles for the nav */
+/* position fixed keeps the nav from scrolling off screen */ 
+/* top and left position the nav */
+/* flex styling keeps the nav elements nicely spaced out */
+.nav {
+  position: fixed;
+  bottom: 0;
+  left: auto;
+  right: auto;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 7px;
+  padding-bottom: 29px;
+  font-size: 9px;
+    
+}
+
+/* a tags withing .nav should have a set color ( so they don't turn blue ) */
+/* and no decoration */
+.nav a {
+  color: darkgray;
+  text-decoration: overline;
+}
+
+/* apply a line through style to nav a tags on hover */
+.nav a:hover {
+  text-decoration: inherit;
+    color: darkgoldenrod;
+}
+
+/* 0 out the margin on divs */
+div {
+  margin: 0;
+}
+
+/* styles for the home page */
+/* set the background image */
+/* and flex align all the content on the page */
+#home {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#home h1 {
+  font-size: 8em;
+  margin: 16px;
+}
+
+#home h3 {
+  text-align: center;
+  margin: 0;
+}
+
+/* style for the projects pageg */
+/* silly background rainbow gradient */
+#projects {
+  background: linear-gradient(black);
+}
+
+/* projects container stores all the project images */
+/* padding to keep from overlapping with the nav */
+/* flex style to keep all the projects looking nice */
+.projects-container {
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+padding-bottom: 51px;
+}
+
+/* project div styles */
+/* background image displays the project image */
+.project {
+  width: 700px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin: 18px;
+}
+
+/* styles for project detail page */
+#project-detail {
+  background-color: black;
+}
+
+#project-detail h1 {
+  padding-top: 128px;
+  font-size: 8em;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+#project-detail p {
+  font-size: 1em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#project-detail img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 51px;
+}
+
+
+/* some default page styles */
+/* min width and min height so our images always take the whole page */
+.page {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+/* this should probably be scoped to the nav but we didn't get there */
+a {
+  font-size: 2em;
+}
+
+
+/* project specific styling */
+/* set background image and change bg position where needed */
+#image-1 {
+  background-image: url("images/2%20lines%20align.jpg");
+   background-position: top;
+}
+#image-2 {
+  background-image: url(images/2_0037.jpg);
+}
+#image-3 {
+  background-image: url("images/connotative.png");
+    background-position: top;
+    padding-bottom: 64px;
+    
+}
+
+
+#about {
+    font-size: 4em;
+    text-align: center;
+    margin-top: inherit;
+}
+
+.graphic {
+    font-kerning: 5em;
+    text-align: center;
+    color: darkred;
+}
